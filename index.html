@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shayari — Dil Se</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fullscreen video background -->
+  <video id="bgVideo" autoplay loop muted playsinline>
+    <source src="video.mp4" type="video/mp4" />
+    <!-- fallback image -->
+  </video>
+
+  <!-- Soft particle layer -->
+  <div id="particles"></div>
+
+  <!-- Title -->
+  <h1 class="title">Dil Ki Ek Chhoti Si Baat...</h1>
+
+  <!-- Shayari container (keeps all lines) -->
+  <div id="shayari"></div>
+
+  <!-- Controls (like + music) -->
+  <div class="controls">
+    <button id="likeBtn">❤️ <span id="likeCount">0</span></button>
+    <button id="musicBtn">🎵 Play Music</button>
+  </div>
+
+  <!-- Background audio file (put your audio.mp3 in same folder) -->
+  <audio id="bgMusic" src="audio.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
